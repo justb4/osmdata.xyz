@@ -30,6 +30,9 @@ Archive | old [workflows](https://github.com/michaelmgis/osmdata.xyz/tree/master
 - primary (map) features --> https://wiki.openstreetmap.org/wiki/Map_Features
 - planet file as osm.pbf --> https://planet.openstreetmap.org/
 
+## Using Docker
+See the [docker Readme](docker/README.md).
+
 ## Recent improvements and changes
 
 - 03.2021

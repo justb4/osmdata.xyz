@@ -1,5 +1,15 @@
 # Docker for osmdata.xyz
 
+initial author: Just van den Broecke - https://github.com/justb4
+
+The Docker image can be used to execute the scripts under `workflow_scripts`
+rendering the per-feature GeoPackage file under a local directory mounted into
+the Docker Containers. You can test with a small OSM (PBF) file first.
+Beware that for a full Planet file, additional memory settings may be required.
+
+You may build/run the Docker Image directly or via `docker-compose`. The latter is
+recommended.
+
 # Using Docker Run
 
 ```
@@ -17,7 +27,8 @@ All GPKG files should be in `./output/`.
 
 # Using docker-compose (recommended)
  
-May change PBF URL in the [docker-compose file](docker-compose.yml):
+May change PBF URL in the [docker-compose file](docker-compose.yml).
+The example here uses the "Bremen" OSM PBF dataset.
 
 ```
    environment:

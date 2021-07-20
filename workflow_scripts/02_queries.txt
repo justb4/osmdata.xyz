@@ -29,7 +29,7 @@ ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 aer
 
 ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 military_EPSG4326.gpkg -nln military_EPSG4326_point -nlt POINT planet-latest_military.osm.pbf -sql "select * from points WHERE military IS NOT NULL"
 
-ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 military_EPSG4326.gpkg -nln military_EPSG4326_line -nlt LINESTRING -update planet-latest:military.osm.pbf -sql "select * from lines WHERE military IS NOT NULL"
+ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 military_EPSG4326.gpkg -nln military_EPSG4326_line -nlt LINESTRING -update planet-latest_military.osm.pbf -sql "select * from lines WHERE military IS NOT NULL"
 
 ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 military_EPSG4326.gpkg -nln military_EPSG4326_multilinestring -nlt MULTILINESTRING -update planet-latest_military.osm.pbf -sql "select * from multilinestrings WHERE military IS NOT NULL"
 

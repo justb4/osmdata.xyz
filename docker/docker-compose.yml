@@ -2,6 +2,7 @@
 version: "3"
 
 services:
+
   osm2gpkg:
 
     image: osmdata_xyz:latest

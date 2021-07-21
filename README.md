@@ -16,13 +16,14 @@ OpenStreetMap (OSM) offers an amazing collection of data. The information contai
 osmdata.xyz is my hobby and absolutely non-commercial. I'm happy to share open data, knowledge and insights.
 
 ## Create your own data
-### Standalone Scripts
+### Standalone scripts
 Workflow: https://github.com/michaelmgis/osmdata.xyz/tree/master/workflow_scripts
 
 ### Using Docker
 See the [docker Readme](docker/README.md).
 
-## Utilized tools to create extracts
+### Utilized tools to create extracts
+Standalone scripts and Docker
 - osmium --> https://osmcode.org/osmium-tool/
 - gdal / ogr2ogr --> https://gdal.org/programs/ogr2ogr.html
 

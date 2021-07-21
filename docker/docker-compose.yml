@@ -1,0 +1,20 @@
+# Runs ETL stack
+version: "3"
+
+services:
+
+  osm2gpkg:
+
+    image: osmdata_xyz:latest
+
+    build:
+      context: ../.
+      dockerfile: Dockerfile
+
+    container_name: osm2gpkg
+
+    environment:
+      - PLANET_FILE=https://download.geofabrik.de/europe/germany/bremen-latest.osm.pbf
+
+    volumes:
+      - ./output:/workflow_scripts/output:rw

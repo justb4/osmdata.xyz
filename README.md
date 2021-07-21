@@ -23,8 +23,6 @@ Workflow: https://github.com/michaelmgis/osmdata.xyz/tree/master/workflow_script
 See the [docker Readme](docker/README.md).
 
 ## Utilized tools to create extracts
-Workflow: https://github.com/michaelmgis/osmdata.xyz/tree/master/workflow_scripts
-
 - osmium --> https://osmcode.org/osmium-tool/
 - gdal / ogr2ogr --> https://gdal.org/programs/ogr2ogr.html
 

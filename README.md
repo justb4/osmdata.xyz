@@ -15,6 +15,13 @@ OpenStreetMap (OSM) offers an amazing collection of data. The information contai
 
 osmdata.xyz is my hobby and absolutely non-commercial. I'm happy to share open data, knowledge and insights.
 
+## Create your own data
+### Standalone Scripts
+Workflow: https://github.com/michaelmgis/osmdata.xyz/tree/master/workflow_scripts
+
+### Using Docker
+See the [docker Readme](docker/README.md).
+
 ## Utilized tools to create extracts
 Workflow: https://github.com/michaelmgis/osmdata.xyz/tree/master/workflow_scripts
 
@@ -29,9 +36,6 @@ Archive | old [workflows](https://github.com/michaelmgis/osmdata.xyz/tree/master
 ## Data basis
 - primary (map) features --> https://wiki.openstreetmap.org/wiki/Map_Features
 - planet file as osm.pbf --> https://planet.openstreetmap.org/
-
-## Using Docker
-See the [docker Readme](docker/README.md).
 
 ## Recent improvements and changes
 

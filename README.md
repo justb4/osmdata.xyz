@@ -35,6 +35,8 @@ See the [docker Readme](docker/README.md).
 
 ## Recent improvements and changes
 
+- 07.2021
+  - New Docker implementation besides the workflow scripts. Thank you [Just van den Broecke](https://github.com/justb4)
 - 03.2021
   - **BIG UPDATE** will be implemented in March - adressing [Issue #25](https://github.com/michaelmgis/osmdata.xyz/issues/25): Switching from imposm/PostgreSQL to gdal/ogr2ogr for processing. Data model stays the same.
   - Adding hstore field "other_tags" which contains all keys and tags who are related to the primary mapfeatues but not listed as main keys/tags.

@@ -3,7 +3,7 @@
 # osmdata.xyz | global osm extracts
 This project provides global data extracts based on [OpenStreetMap data](https://planet.openstreetmap.org/) as [GeoPackages](https://www.geopackage.org/). Each extract represents its related [primary feature](https://wiki.openstreetmap.org/wiki/Map_Features) respectively key value regarding the [OpenStreetMap project](https://www.openstreetmap.org/). Every GeoPackage contains the four types of geometries: point, line, multilinestring and multipolygon. For each primary feature all prepared tags are always contained in the same way.
 
-## Downloads - Extracts are available on
+## Downloads - extracts are available on
 https://download.osmdata.xyz/
 
 In a monthly cycle new extracts are provided. The first Planet Dump of each month from openstreetmap.org will be available 3 days later as it takes a while for the data to be processed.

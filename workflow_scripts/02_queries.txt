@@ -117,13 +117,13 @@ ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 sho
 ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 shop_EPSG4326.gpkg -nln shop_EPSG4326_multipolygon -nlt MULTIPOLYGON -update planet-latest_shop.osm.pbf -sql "select * from multipolygons WHERE shop IS NOT NULL"
 
 
-ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_point -nlt POINT planet-latest_railway.osm.pbf -sql "select * from points WHERE railway IS NOT NULL"
+ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_EPSG4326_point -nlt POINT planet-latest_railway.osm.pbf -sql "select * from points WHERE railway IS NOT NULL"
 
-ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_line -nlt LINESTRING -update planet-latest_railway.osm.pbf -sql "select * from lines WHERE railway IS NOT NULL"
+ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_EPSG4326_line -nlt LINESTRING -update planet-latest_railway.osm.pbf -sql "select * from lines WHERE railway IS NOT NULL"
 
-ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_multilinestring -nlt MULTILINESTRING -update planet-latest_railway.osm.pbf -sql "select * from multilinestrings WHERE railway IS NOT NULL"
+ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_EPSG4326_multilinestring -nlt MULTILINESTRING -update planet-latest_railway.osm.pbf -sql "select * from multilinestrings WHERE railway IS NOT NULL"
 
-ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_multipolygon -nlt MULTIPOLYGON -update planet-latest_railway.osm.pbf -sql "select * from multipolygons WHERE railway IS NOT NULL"
+ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 railway_EPSG4326.gpkg -nln railway_EPSG4326_multipolygon -nlt MULTIPOLYGON -update planet-latest_railway.osm.pbf -sql "select * from multipolygons WHERE railway IS NOT NULL"
 
 
 ogr2ogr -f "GPKG" -oo CONFIG_FILE=osmconf_all.ini -oo MAX_TMPFILE_SIZE=10000 man_made_EPSG4326.gpkg -nln man_made_EPSG4326_point -nlt POINT planet-latest_man_made.osm.pbf -sql "select * from points WHERE man_made IS NOT NULL"
